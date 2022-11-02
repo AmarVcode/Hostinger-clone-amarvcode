@@ -2,14 +2,49 @@ body{
     margin: 0;
 }
 
+*{
+    box-sizing: border-box;
+}
+
 #india-logo{
     width: 2rem;
 }
 
 .navbar{
-    box-shadow: 0px 0px 15px rgba(128, 128, 128, 0.429);
+    
     padding: 1.3rem;
 }
+
+.main-nav:nth-child(1){
+  background-color: white;
+  position: fixed;
+  box-shadow: 0px 0px 15px rgba(128, 128, 128, 0.429);
+  width: 100%;
+}
+
+.main-nav:nth-child(2){
+   background-color: #673de6;
+   position: relative;
+   width: 100%;
+   box-shadow: 0px 0px 15px #673de6,0px 0px 15px #673de6,0px 0px 15px #673de6,0px 0px 15px #673de6,0px 0px 15px #673de6;
+   color: white;
+}
+
+.main-nav:nth-child(2) svg{
+   color: white;
+   fill: white;
+}
+
+.main-nav:nth-child(2) .nav-link{
+    color: white;
+    fill: white;
+ }
+
+ .main-nav:nth-child(2) #btnlog>button{
+    color: white;
+    background-color: transparent;
+    border-color: white;
+ }
 
 .navbar .nav-link{
     font-weight: 500;
@@ -43,4 +78,108 @@ body{
 #btnlog>button:hover{
     transition: 100ms;
     opacity: 50%;
+}
+
+#top-container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    background-color: #673de6;
+    color: white;
+}
+
+#top-container img{
+    width: 100%;
+}
+
+#top-container>div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#top-container>div:nth-child(1)>div{
+    max-width:45ch;
+    margin: auto;
+}
+
+#top-container h1{
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+#top-container p{
+    margin-bottom: 2rem;
+}
+
+#top-container button{
+    font-weight: 600;
+    color: white;
+    margin-bottom: 1rem;
+    background-color: #fc5184;
+    border: none;
+    padding: .8rem 5rem;
+    transition: 500ms;
+}
+
+#top-container button:hover{
+    font-weight: 600;
+    color: white;
+    margin-bottom: 1rem;
+    background-color: #bd3e64;
+    border: none;
+    padding: .8rem 5rem;
+}
+
+
+
+#top-container svg{
+    fill: #00b090;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    
+    #top-container{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    
+}
+
+
+.box1{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-top: 2rem;
+}
+
+.box1>div{
+    margin: 1rem;
+}
+
+.box1>div>div>h2{
+    width: 1rem;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 600;
+    }
+
+
+.stars{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    margin: 1rem;
+}
+
+.stars img{
+width: 2.5rem;
+}
+
+.box1 p{
+    margin: 2rem 0.5rem;
+    font-size: 0.9rem;
+    color: black;
+    font-weight: 600;
 }
