@@ -131,6 +131,12 @@ body{
     padding: .8rem 5rem;
 }
 
+#top-container > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 
 
 #top-container svg{
@@ -139,19 +145,12 @@ body{
 
 
 
-@media screen and (max-width: 480px) {
-    
-    #top-container{
-        display: grid;
-        grid-template-columns: 100%;
-    }
-    
-}
+
 
 
 .box1{
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: auto auto auto auto;
     margin-top: 2rem;
 }
 
@@ -174,7 +173,7 @@ body{
 }
 
 .stars img{
-width: 2.5rem;
+width: 2.5vw;
 }
 
 .box1 p{
@@ -182,4 +181,33 @@ width: 2.5rem;
     font-size: 0.9rem;
     color: black;
     font-weight: 600;
+}
+
+.box-head{
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    color: #2f1c6a;
+    margin-top: 4rem;
+}
+
+.box-head h1{
+    font-weight: 600;
+}
+
+.box-head p{
+    font-weight: 500;
+}
+
+@media screen and (max-width: 480px) {
+    
+    #top-container{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    
+    .box1{
+        grid-template-columns: auto auto;
+    }
+    
 }
