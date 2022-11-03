@@ -173,7 +173,7 @@ body{
 }
 
 .stars img{
-width: 2.5vw;
+width: 1.5rem;
 }
 
 .box1 p{
@@ -198,6 +198,58 @@ width: 2.5vw;
 .box-head p{
     font-weight: 500;
 }
+
+
+
+.tooltip-my>span{
+display: none;
+position: absolute;
+background-color: #673de6;
+color: white;
+font-size: 1rem;
+font-weight: 500;
+max-width: 250px;
+padding: 1rem;
+border-radius: 10px;
+
+}
+
+.tooltip-my:hover span{
+    display: block;
+}
+
+.box3 h5{
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.box3 h5>span>svg{
+    fill: #00b090;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 480px) {
     
