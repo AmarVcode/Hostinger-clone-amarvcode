@@ -85,6 +85,7 @@ body{
     grid-template-columns: 40% 60%;
     background-color: #673de6;
     color: white;
+    cursor: pointer;
 }
 
 #top-container img{
@@ -152,6 +153,7 @@ body{
     display: grid;
     grid-template-columns: auto auto auto auto;
     margin-top: 2rem;
+    cursor: pointer;
 }
 
 .box1>div{
@@ -170,6 +172,7 @@ body{
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     margin: 1rem;
+    cursor: pointer;
 }
 
 .stars img{
@@ -181,6 +184,7 @@ width: 1.5rem;
     font-size: 0.9rem;
     color: black;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .box-head{
@@ -189,6 +193,7 @@ width: 1.5rem;
     margin: auto;
     color: #2f1c6a;
     margin-top: 4rem;
+    cursor: pointer;
 }
 
 .box-head h1{
@@ -229,17 +234,136 @@ border-radius: 10px;
     fill: #00b090;
 }
 
+.box3{
+ margin-top: 3rem;
+    
+}
+
+.box3>div{
+       border:1px solid #301c6a4d ;
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    color: #2f1c6a;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.box3>div>div{
+    margin: 1rem;
+}
+
+.box3 h5{
+    font-size: 1rem;
+}
+
+.box3 .tooltip-my{
+    fill: #2f1c6a;
+}
+
+
+.banner{
+    border-left: 1px solid #301c6a4c;
+    border-right: 1px solid #301c6a49;
+}
+.banner>h1{
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 600;
+}
+.banner>h3{
+    font-size: 1rem;
+    text-align: center;
+    opacity: 80%;
+}
+
+.banner>h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    
+}
+
+
+.banner>h2>span{
+    font-size: 3rem;
+}
+
+.banner button{
+    border: none;
+    background-color: #673de6;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.6em 4em ;
+    margin: auto;
+    width: fit-content;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    transition: 500ms;
+    border-radius: 5px;
+}
+
+.banner button:hover{
+   opacity: 50%;
+}
+
+.seemore{
+    max-width: 1000px;
+    border: 1px solid #301c6a4d;
+    margin: auto;
+    padding: 2rem;
+    color: #673de6;
+    font-weight: 600;
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.seemore>svg{
+    fill: #673de6;
+}
+
+
+.pro-container{
+    color: #2f1c6a;
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: 1000px;
+    margin: 5rem auto;
+}
 
 
 
+.pro-container>div>img{
+    width: 100%;
+    
+}
 
+.pro-container h1{
+    font-weight: 600;
+    font-size: 2.2rem;
+    max-width: 20ch;
+}
 
+.pro-container h5{
+    color: grey;
+    font-size: 1rem;
+    display: flex;
+    gap: 1rem;
+}
 
+.tooltip-my>svg:nth-child(1){
+    color: #00b090 !important;
+    fill: #00b090 !important;
+}
 
-
-
-
-
+.pro-container .tooltip-my svg{
+    color: grey !important;
+    fill: grey;
+}
 
 
 
@@ -261,5 +385,13 @@ border-radius: 10px;
     .box1{
         grid-template-columns: auto auto;
     }
+
+    .box3>div{
+     grid-template-columns: auto;
+ }
+
+ .banner{
+    border: none;
+ }
+ }
     
-}
