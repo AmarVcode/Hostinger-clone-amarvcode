@@ -403,13 +403,72 @@ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.498);
    width: 15rem;
 }
 
+.head-2{
+    text-align: center;
+     color: #2f1c6a;
+     cursor: pointer;
+}
 
+.head-2>h1{
+    font-weight: 600;
+}
 
+.head-2 svg{
+    color: #00b090;
+    fill: #00b090;
+}
 
+.head-2 >button{
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.6em 4em;
+    background-color: #673de6;
+    color: white;
+    opacity: 80%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    transition: 500ms;
+}
 
+.head-2>button:hover{
+    opacity: 100%;
+}
 
+.colored-container{
+    background-color: #673de6;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
 
+.bro-container{
+    color: white;
+}
 
+.bro-container h5{
+    color: white;
+}
+
+.bro-container h5>span>svg{
+    color: white !important;
+    fill: white !important;
+}
+
+.bro-block >div{
+    background-color: #5025d1;
+    color: white;
+}
+
+.user-block{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.user-block>div:nth-child(1){
+    border: 1px solid #301c6a6f;
+}
 
 
 
